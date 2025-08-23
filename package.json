@@ -1,0 +1,22 @@
+{
+  "name": "eum-website",
+  "version": "1.0.0",
+  "description": "E-UM 미디어아트 동아리 웹사이트",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build required'",
+    "start": "vercel dev"
+  },
+  "keywords": [
+    "media-art",
+    "club",
+    "website",
+    "static"
+  ],
+  "author": "E-UM",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^46.0.2"
+  }
+}

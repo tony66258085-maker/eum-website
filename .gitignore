@@ -1,0 +1,69 @@
+# Large media files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+
+# Site files folder (contains large media files)
+site files - 7f93e5d2-238f-425e-ba96-1a3b420d9bfc/
+
+# Large images
+images/timeline/이음로고.jpg
+images/timeline/zip.PNG
+
+# Large videos
+videos/zip_moving_2.mp4
+
+# Exhibition detail files
+전시소개_자세히보기/
+
+# Git objects (if they get too large)
+.git/objects/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+.vercel
