@@ -766,116 +766,171 @@ function initExhibitionSliderButtons() {
 const exhibitionData = {
     'sensory-dissolution': {
         title: 'DISSOLUTION OF SENSES: 감각해체',
-        period: '2025.07',
-        location: '픽셀펄스 전시',
-        description: '전시 기획 및 작품 제작',
+        period: '2025.07.01 - 2025.07.31',
+        location: '아트코리아랩 미디어월',
+        description: '단체전시 기획 및 작품 제작',
         photos: [
-            'images/timeline/감각해체.png',
-            'images/감각해체1.png',
-            'images/감각해체2.png',
-            'images/감각해체3.jpeg',
-            'images/감각해체4.jpeg',
-            'images/감각해체5.jpeg',
-            'images/감각해체6.jpeg',
-            'images/감각해체7.jpeg'
+            './images/exhibitions/sensory-dissolution/main.jpg',
+            './images/exhibitions/sensory-dissolution/photo1.jpg',
+            './images/exhibitions/sensory-dissolution/photo2.jpg',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-21-42 001.png',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-21-42 002.png',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-21-57 001.jpeg',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-21-57 002.jpeg',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-21-57 003.jpeg',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-21-57 004.jpeg',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-24-56 001.jpeg',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-24-57 002.jpeg',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-24-57 003.jpeg',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-24-57 005.jpeg',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-24-57 007.jpeg',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-24-57 008.jpeg',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-24-57 009.jpeg',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-24-57 010.jpeg',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-24-57 012.jpeg',
+            './public/전시소개_자세히보기/감각해체/KakaoTalk_Photo_2025-08-24-15-24-57 013.jpeg',
+            './public/전시소개_자세히보기/감각해체/스크린샷 2025-08-24 오후 3.23.45.png'
         ],
         videos: [
-            'videos/감각해체.mp4',
-            'videos/감각해체영상2.mov',
-            'videos/정자맵핑.mp4'
+            './public/전시소개_자세히보기/감각해체/감각해체.mov'
         ]
     },
     'zip': {
         title: '.zip',
-        period: '2025.05',
-        location: '학기말 전시',
-        description: '전시 기획 및 작품 제작',
+        period: '2025.05.26 - 2025.05.29',
+        location: '경일대학교 12호관 1F',
+        description: '학기말 전시 기획 및 작품 제작',
         photos: [
-            'images/timeline/zip.PNG',
-            'images/학기말전시.jpeg',
-            'images/학기말전시2.jpeg'
+            './public/전시소개_자세히보기/zip/IMG_0710 2.jpg',
+            './public/전시소개_자세히보기/zip/original 2025-05-26 124413.358 2.jpg',
+            './public/전시소개_자세히보기/zip/original 2025-05-26 183546.631.JPG',
+            './public/전시소개_자세히보기/zip/original 2025-05-27 135030.609.JPG',
+            './public/전시소개_자세히보기/zip/KakaoTalk_Photo_2025-08-24-15-25-55 002.jpeg',
+            './public/전시소개_자세히보기/zip/KakaoTalk_Photo_2025-08-24-15-25-55 003.jpeg',
+            './public/전시소개_자세히보기/zip/KakaoTalk_Photo_2025-08-24-15-25-55 004.jpeg',
+            './public/전시소개_자세히보기/zip/KakaoTalk_Photo_2025-08-24-15-25-55 005.jpeg',
+            './public/전시소개_자세히보기/zip/KakaoTalk_Photo_2025-08-24-15-25-55 006.jpeg',
+            './public/전시소개_자세히보기/zip/KakaoTalk_Photo_2025-08-24-15-25-55 007.jpeg',
+            './public/전시소개_자세히보기/zip/KakaoTalk_Photo_2025-08-24-15-26-18 002.jpeg',
+            './public/전시소개_자세히보기/zip/KakaoTalk_Photo_2025-08-24-15-26-18 003.jpeg',
+            './public/전시소개_자세히보기/zip/KakaoTalk_Photo_2025-08-24-15-26-18 004.jpeg',
+            './public/전시소개_자세히보기/zip/KakaoTalk_Photo_2025-08-24-15-26-18 006.jpeg',
+            './public/전시소개_자세히보기/zip/KakaoTalk_Photo_2025-08-24-15-26-18 013.jpeg',
+            './public/전시소개_자세히보기/zip/KakaoTalk_Photo_2025-08-24-15-26-18 015.jpeg',
+            './public/전시소개_자세히보기/zip/KakaoTalk_Photo_2025-08-24-15-26-18 016.jpeg',
+            './public/전시소개_자세히보기/zip/KakaoTalk_Photo_2025-08-24-15-26-18 018.jpeg'
         ],
-        videos: [
-            'videos/할로윈 맵핑.mov',
-            'videos/zip_moving_2.mp4',
-            'videos/zip_moving_2 복사본.mp4'
-        ]
+        videos: []
     },
     'clear-things': {
         title: '선명해져야 할 것들',
-        period: '2024.12',
-        location: '교외전시',
+        period: '2024.12.20 - 2024.12.31',
+        location: 'MOV.A(성미산로 888-11 5F)',
         description: '김다슬 교수님 전시 참여 및 작품 제작',
         photos: [
-            'images/timeline/clear-things.jpg'
+            './public/전시소개_자세히보기/선명해져야 할 것들/선명해져야할것들1.jpg',
+            './public/전시소개_자세히보기/선명해져야 할 것들/선명해져야할것들2.jpg',
+            './public/전시소개_자세히보기/선명해져야 할 것들/선명해져야할것들3.jpg',
+            './public/전시소개_자세히보기/선명해져야 할 것들/선명해져야할것들4.jpg',
+            './public/전시소개_자세히보기/선명해져야 할 것들/선명해져야할것들5.jpg',
+            './public/전시소개_자세히보기/선명해져야 할 것들/선명해져야할것들6.jpg',
+            './public/전시소개_자세히보기/선명해져야 할 것들/선명해져야할것들7.jpg',
+            './public/전시소개_자세히보기/선명해져야 할 것들/선명해져야할것들8.jpg'
         ],
         videos: []
     },
     'sobok': {
         title: '소복',
-        period: '2024.12',
-        location: '학기말 연말전시',
-        description: '전시 기획 및 작품 제작',
+        period: '2024.12.16 - 2024.12.20',
+        location: '경일대학교 12호관 1F',
+        description: '학기말 전시 기획 및 작품 제작',
         photos: [
-            'images/timeline/sobok.jpg',
-            'images/소복 사진1.jpg',
-            'images/소복 사진2.jpg',
-            'images/소복 사진3.jpg',
-            'images/소복 사진4.jpg',
-            'images/소복 사진5.jpg',
-            'images/소복 사진6.jpg',
-            'images/소복 사진7.jpg',
-            'images/소복 사진8.jpg',
-            'images/소복 사진9.jpg',
-            'images/소복 사진10.jpg',
-            'images/소복 사진11.jpg',
-            'images/소복 사진12.jpg',
-            'images/소복 사진13.jpg',
-            'images/소복 사진14.jpg',
-            'images/소복 단체사진.jpg',
-            'images/소복 포스터.jpg'
+            './public/전시소개_자세히보기/소복/IMG_5010.jpg',
+            './public/전시소개_자세히보기/소복/original 2024-12-16 201060.jpg',
+            './public/전시소개_자세히보기/소복/소복 단체사진.jpg',
+            './public/전시소개_자세히보기/소복/소복 사진1.jpg',
+            './public/전시소개_자세히보기/소복/소복 사진10_edited.jpg',
+            './public/전시소개_자세히보기/소복/소복 사진11.jpg',
+            './public/전시소개_자세히보기/소복/소복 사진12.jpg',
+            './public/전시소개_자세히보기/소복/소복 사진13.jpg',
+            './public/전시소개_자세히보기/소복/소복 사진14.jpg',
+            './public/전시소개_자세히보기/소복/소복 사진3.jpg',
+            './public/전시소개_자세히보기/소복/소복 사진4.jpg',
+            './public/전시소개_자세히보기/소복/소복 사진5.jpg',
+            './public/전시소개_자세히보기/소복/소복 사진6.jpg',
+            './public/전시소개_자세히보기/소복/소복 사진7.jpg',
+            './public/전시소개_자세히보기/소복/소복 사진8.jpg',
+            './public/전시소개_자세히보기/소복/소복 승제.png',
+            './public/전시소개_자세히보기/소복/소복 승훈.png',
+            './public/전시소개_자세히보기/소복/소복 추가사진1.jpg',
+            './public/전시소개_자세히보기/소복/소복 추가사진2.jpg',
+            './public/전시소개_자세히보기/소복/소복 추가사진5.jpg'
         ],
         videos: []
     },
     'future-fragments': {
         title: '미래의 파편들',
-        period: '2024.10',
-        location: '뉴테크가 만든 예술의 조각들',
+        period: '2024.10.18 - 2024.11.10',
+        location: '대구경북디자인센터 1F Media Wall',
         description: '교외 전시 작가로 참여 및 작품 제작',
         photos: [
-            'images/timeline/future-fragments.png'
+            './public/전시소개_자세히보기/미래의 파편들/미래의파편들 사진1_edited.jpg',
+            './public/전시소개_자세히보기/미래의 파편들/미래의파편들 사진2_edited.jpg',
+            './public/전시소개_자세히보기/미래의 파편들/미래의파편들 사진3_edited.jpg',
+            './public/전시소개_자세히보기/미래의 파편들/미래의파편들 사진5_edited_edited.jpg',
+            './public/전시소개_자세히보기/미래의 파편들/미래의파편들 사진6_edited.jpg',
+            './public/전시소개_자세히보기/미래의 파편들/미래의파편들사진7.jpg'
         ],
         videos: []
     },
     'mimyo': {
-        title: '美,묘하다',
-        period: '2024.06',
-        location: '학기말 연말전시',
-        description: '교내 전시 기획 및 작품 제작',
+        title: '美, 묘하다',
+        period: '2024.06.04 - 2024.06.10',
+        location: '경일대학교 11호관 갤러리',
+        description: '학기말 전시 기획 및 작품 제작',
         photos: [
-            'images/timeline/mimyo.jpg'
+            './public/전시소개_자세히보기/미묘하다/미묘하다 사진1.jpg',
+            './public/전시소개_자세히보기/미묘하다/미묘하다 사진2.jpg',
+            './public/전시소개_자세히보기/미묘하다/미묘하다 사진3.jpg',
+            './public/전시소개_자세히보기/미묘하다/미묘하다 사진4.jpg',
+            './public/전시소개_자세히보기/미묘하다/미묘하다 사진5.jpg',
+            './public/전시소개_자세히보기/미묘하다/미묘하다 사진6.jpg'
         ],
         videos: []
     },
     'meta-festival': {
         title: 'GYEONGBUK META CONTENTS FESTIVAL',
-        period: '2024.05',
-        location: '메타콘텐츠 학과 대표 전시',
+        period: '2024.05.31 - 2024.06.02',
+        location: '대구 EXCO 동관 1F HALL 6',
         description: '메타콘텐츠 학과 대표 전시 기획 및 작품 제작',
         photos: [
-            'images/timeline/metacontents.jpg'
+            './public/전시소개_자세히보기/GYEONGBUK META CONTENTS FESTIVAL/메타콘 구도.png',
+            './public/전시소개_자세히보기/GYEONGBUK META CONTENTS FESTIVAL/메타콘 사진1_edited.jpg',
+            './public/전시소개_자세히보기/GYEONGBUK META CONTENTS FESTIVAL/메타콘 사진2_edited.jpg',
+            './public/전시소개_자세히보기/GYEONGBUK META CONTENTS FESTIVAL/메타콘 사진3_edited.png',
+            './public/전시소개_자세히보기/GYEONGBUK META CONTENTS FESTIVAL/메타콘 사진4_edited.jpg',
+            './public/전시소개_자세히보기/GYEONGBUK META CONTENTS FESTIVAL/메타콘 사진5_edited_edited.jpg',
+            './public/전시소개_자세히보기/GYEONGBUK META CONTENTS FESTIVAL/메타콘 작업과정_edited.png',
+            './public/전시소개_자세히보기/GYEONGBUK META CONTENTS FESTIVAL/메타콘 작업과정2_edited.jpg'
         ],
         videos: []
     },
     'survival': {
         title: 'SURVIVAL',
-        period: '2024.02',
-        location: '메타콘텐츠융합전공 성과 보고회',
-        description: '메타콘텐츠융합전공의 성과를 보여주는 전시입니다.',
+        period: '2024.02.17 - 2024.02.25',
+        location: '대구 중구 동덕로 30길 117 2F 아트스텔라 소노',
+        description: '메타콘텐츠융합전공의 성과 보고회',
         photos: [
-            'images/timeline/survival.png'
+            './public/전시소개_자세히보기/SURVIVAL/서바이벌 사진1.png',
+            './public/전시소개_자세히보기/SURVIVAL/서바이벌 사진2.png',
+            './public/전시소개_자세히보기/SURVIVAL/서바이벌 사진3.png',
+            './public/전시소개_자세히보기/SURVIVAL/서바이벌 사진4.png',
+            './public/전시소개_자세히보기/SURVIVAL/서바이벌 사진5.png',
+            './public/전시소개_자세히보기/SURVIVAL/서바이벌 사진6.png'
         ],
-        videos: ['videos/전시 견학1.mp4']
+        videos: [
+            './public/전시소개_자세히보기/SURVIVAL/서바이벌 영상2.mp4'
+        ]
     }
 };
 
@@ -953,7 +1008,7 @@ function openExhibitionModal(data) {
             const photoItem = document.createElement('div');
             photoItem.className = 'photo-item';
             photoItem.innerHTML = `
-                <img src="${photo}" alt="${data.title}" onerror="this.style.display='none'">
+                <img src="${encodeURI(photo)}" alt="${data.title}" onerror="console.log('이미지 로드 실패: ${photo}'); this.style.display='none';" onload="console.log('이미지 로드 성공: ${photo}');">
                 <div class="photo-overlay">
                     <span>클릭하여 확대</span>
                 </div>
@@ -962,7 +1017,7 @@ function openExhibitionModal(data) {
             // 사진 클릭 시 확대 기능 추가
             const img = photoItem.querySelector('img');
             img.addEventListener('click', function() {
-                openImageModal(this.src, data.title);
+                openImageModal(encodeURI(this.src), data.title);
             });
             
             photoGallery.appendChild(photoItem);
@@ -982,7 +1037,7 @@ function openExhibitionModal(data) {
             const video = document.createElement('video');
             video.id = 'exhibitionVideo';
             video.controls = true;
-            video.src = data.videos[0];
+            video.src = encodeURI(data.videos[0]);
             videoContainer.appendChild(video);
         } else {
             // 여러 영상이 있으면 선택 드롭다운 추가
@@ -1007,14 +1062,14 @@ function openExhibitionModal(data) {
             const video = document.createElement('video');
             video.id = 'exhibitionVideo';
             video.controls = true;
-            video.src = data.videos[0];
+            video.src = encodeURI(data.videos[0]);
             
             videoContainer.appendChild(videoSelect);
             videoContainer.appendChild(video);
             
             // 영상 선택 시 변경
             videoSelect.addEventListener('change', function() {
-                video.src = this.value;
+                video.src = encodeURI(this.value);
                 video.load();
             });
         }
@@ -1053,7 +1108,7 @@ function openImageModal(imageSrc, imageTitle) {
                 <button class="image-modal-close">&times;</button>
             </div>
             <div class="image-modal-body">
-                <img src="${imageSrc}" alt="${imageTitle}">
+                <img src="${encodeURI(imageSrc)}" alt="${imageTitle}">
             </div>
         </div>
     `;
