@@ -27,7 +27,7 @@ const exhibitionData = {
             'exhibition-details/sensory-dissolution/sensory_dissolution18.jpeg'
         ],
         videos: [
-            'exhibition-details/sensory-dissolution/sensory_dissolution_video.mov'
+            'exhibition-details/sensory-dissolution/sensory_dissolution_video.mp4'
         ]
     },
     'zip': {
@@ -153,10 +153,10 @@ const exhibitionData = {
             'exhibition-details/metacontents-festival/metacontents-composition.png',
             'exhibition-details/metacontents-festival/metacontents-photo1_edited.jpg',
             'exhibition-details/metacontents-festival/metacontents-photo2_edited.jpg',
-            'exhibition-details/metacontents-festival/metacontents-photo3_edited.png',
+            'exhibition-details/metacontents-festival/metacontents-photo3_edited.jpg',
             'exhibition-details/metacontents-festival/metacontents-photo4_edited.jpg',
             'exhibition-details/metacontents-festival/metacontents-photo5_edited_edited.jpg',
-            'exhibition-details/metacontents-festival/metacontents-process_edited.png',
+            'exhibition-details/metacontents-festival/metacontents-process_edited.jpg',
             'exhibition-details/metacontents-festival/metacontents-process2_edited.jpg'
         ],
         videos: []
@@ -168,12 +168,12 @@ const exhibitionData = {
         description: '메타콘텐츠융합전공의 성과 보고회',
         fullDescription: '메타콘텐츠융합전공의 성과 보고회',
         photos: [
-            'exhibition-details/SURVIVAL/survival_photo1.png',
-            'exhibition-details/SURVIVAL/survival_photo2.png',
-            'exhibition-details/SURVIVAL/survival_photo3.png',
-            'exhibition-details/SURVIVAL/survival_photo4.png',
-            'exhibition-details/SURVIVAL/survival_photo5.png',
-            'exhibition-details/SURVIVAL/survival_photo6.png'
+            'exhibition-details/SURVIVAL/survival_photo1.jpg',
+            'exhibition-details/SURVIVAL/survival_photo2.jpg',
+            'exhibition-details/SURVIVAL/survival_photo3.jpg',
+            'exhibition-details/SURVIVAL/survival_photo4.jpg',
+            'exhibition-details/SURVIVAL/survival_photo5.jpg',
+            'exhibition-details/SURVIVAL/survival_photo6.jpg'
         ],
         videos: [
             'exhibition-details/SURVIVAL/survival_video2.mp4'
