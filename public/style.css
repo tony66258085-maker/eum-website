@@ -1931,18 +1931,19 @@ section:not(:last-child)::after {
     
     .nav-menu {
         position: fixed !important;
-        top: 70px !important;
+        top: 60px !important;
         left: -100% !important;
         width: 100% !important;
-        height: calc(100vh - 70px) !important;
+        height: calc(100vh - 60px) !important;
         background: var(--bg-color) !important;
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
         padding-top: 0 !important;
-        padding-bottom: 20vh !important;
+        padding-bottom: 0 !important;
         transition: left 0.3s ease !important;
+        z-index: 999 !important;
     }
     
     .nav-logo {
@@ -2160,15 +2161,16 @@ section:not(:last-child)::after {
         justify-content: center !important;
         align-items: center !important;
         position: fixed !important;
-        top: 70px !important;
+        top: 60px !important;
         left: -100% !important;
         width: 100% !important;
-        height: calc(100vh - 70px) !important;
+        height: calc(100vh - 60px) !important;
         background: var(--bg-color) !important;
         flex-direction: column !important;
         padding-top: 0 !important;
-        padding-bottom: 15vh !important;
+        padding-bottom: 0 !important;
         transition: left 0.3s ease !important;
+        z-index: 999 !important;
     }
     
     .nav-link {
