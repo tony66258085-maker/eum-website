@@ -782,6 +782,12 @@ section:not(:last-child)::after {
 .activity-video {
     object-fit: cover !important;
     background: transparent !important;
+    display: block;
+}
+
+/* 영상 로드 실패시 fallback 처리 */
+.activity-video.error {
+    display: none;
 }
 
 .activity-video::-webkit-media-controls {
@@ -1110,6 +1116,14 @@ section:not(:last-child)::after {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    display: block;
+}
+
+.exhibition-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none; /* 기본적으로 숨김, JavaScript에서 필요시 표시 */
 }
 
 @media (max-width: 768px) {
@@ -3040,14 +3054,14 @@ button:focus {
 
 .popup-header h3 {
     margin: 0 0 0.5rem 0;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .popup-subtitle {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     opacity: 0.9;
     font-weight: 400;
 }
@@ -3084,22 +3098,22 @@ button:focus {
 .popup-features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
     background: linear-gradient(145deg, #f8f9fa, #e9ecef);
-    border-radius: 15px;
+    border-radius: 12px;
     border: 1px solid rgba(40, 235, 37, 0.1);
 }
 
 .feature-item {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
-    padding: 0.8rem;
+    gap: 0.6rem;
+    padding: 0.6rem;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
 
@@ -3109,9 +3123,9 @@ button:focus {
 }
 
 .feature-icon {
-    font-size: 1.5rem;
-    width: 40px;
-    height: 40px;
+    font-size: 1.3rem;
+    width: 35px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3130,10 +3144,10 @@ button:focus {
 }
 
 .popup-message p {
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.8rem 0;
     color: #444;
-    line-height: 1.7;
-    font-size: 0.9rem;
+    line-height: 1.6;
+    font-size: 0.85rem;
 }
 
 .popup-message p:last-child {
@@ -3266,12 +3280,14 @@ button:focus {
 /* 모바일 반응형 팝업 스타일 */
 @media (max-width: 768px) {
     .popup-content {
-        max-width: 95%;
-        margin: 1rem;
+        max-width: 85%;
+        max-height: 85vh;
+        margin: 2rem auto;
+        overflow-y: auto;
     }
     
     .popup-header {
-        padding: 1.5rem 1.5rem 1rem;
+        padding: 1.2rem 1.2rem 0.8rem;
     }
     
     .popup-icon {
@@ -3285,39 +3301,41 @@ button:focus {
     }
     
     .popup-header h3 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     
     .popup-subtitle {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
     
     .popup-body {
-        padding: 1.5rem;
+        padding: 1.2rem;
     }
     
     .popup-features {
         grid-template-columns: 1fr;
-        padding: 1rem;
-        gap: 0.8rem;
+        padding: 0.8rem;
+        gap: 0.6rem;
+        margin-bottom: 1.2rem;
     }
     
     .feature-item {
-        padding: 0.6rem;
+        padding: 0.5rem;
+        gap: 0.5rem;
     }
     
     .feature-icon {
-        width: 35px;
-        height: 35px;
-        font-size: 1.2rem;
+        width: 30px;
+        height: 30px;
+        font-size: 1.1rem;
     }
     
     .feature-item span {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
     
     .popup-message p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
     
     .popup-notice {
@@ -3386,18 +3404,20 @@ button:focus {
 
 @media (max-width: 480px) {
     .popup-content {
-        max-width: 98%;
-        margin: 0.5rem;
+        max-width: 90%;
+        max-height: 80vh;
+        margin: 3rem auto;
+        overflow-y: auto;
     }
     
     .popup-header {
-        padding: 1rem;
+        padding: 0.8rem;
     }
     
     .popup-icon {
         width: 50px;
         height: 50px;
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.6rem;
     }
     
     .popup-icon svg {
@@ -3406,44 +3426,45 @@ button:focus {
     }
     
     .popup-header h3 {
-        font-size: 1.1rem;
-    }
-    
-    .popup-subtitle {
-        font-size: 0.8rem;
-    }
-    
-    .popup-body {
-        padding: 1rem;
-    }
-    
-    .popup-features {
-        padding: 0.8rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .feature-item {
-        padding: 0.5rem;
-        gap: 0.6rem;
-    }
-    
-    .feature-icon {
-        width: 30px;
-        height: 30px;
         font-size: 1rem;
     }
     
+    .popup-subtitle {
+        font-size: 0.7rem;
+    }
+    
+    .popup-body {
+        padding: 0.8rem;
+    }
+    
+    .popup-features {
+        padding: 0.6rem;
+        margin-bottom: 1.2rem;
+        gap: 0.5rem;
+    }
+    
+    .feature-item {
+        padding: 0.4rem;
+        gap: 0.4rem;
+    }
+    
+    .feature-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.9rem;
+    }
+    
     .feature-item span {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
     
     .popup-message {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.2rem;
     }
     
     .popup-message p {
-        font-size: 0.75rem;
-        line-height: 1.6;
+        font-size: 0.7rem;
+        line-height: 1.5;
     }
     
     .popup-notice {
