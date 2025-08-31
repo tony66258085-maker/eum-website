@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-UM</title>
+    
+    <!-- 성능 최적화 메타 태그 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Open Graph 메타 태그 (소셜 미디어 공유용) -->
+    <meta property="og:title" content="E-UM">
+    <meta property="og:description" content="미디어아트 동아리 이음은 기술과 예술의 경계를 자유롭게 넘나들며, 각자의 시선이 만나 하나의 이야기를 그려냅니다.">
+    <meta property="og:image" content="https://eum-website.vercel.app/images/timeline/eum-logo.jpg?v=5">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eum-website.vercel.app/">
+    <meta property="og:site_name" content="E-UM">
+    
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="E-UM">
+    <meta name="twitter:description" content="미디어아트 동아리 이음은 기술과 예술의 경계를 자유롭게 넘나들며, 각자의 시선이 만나 하나의 이야기를 그려냅니다.">
+    <meta name="twitter:image" content="https://eum-website.vercel.app/images/timeline/eum-logo.jpg?v=5">
+    
+    <!-- 카카오톡 메타 태그 -->
+    <meta property="og:image:secure_url" content="https://eum-website.vercel.app/images/timeline/eum-logo.jpg?v=5">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="E-UM 미디어아트 동아리 로고">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:updated_time" content="2025-08-30T15:30:00+09:00">
+    <meta property="og:site_name" content="E-UM">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <!-- 보안 메타 태그 -->
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <!-- 브라우저 탭용 파비콘 설정 -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://eum-website.vercel.app/images/e-umrogo_sum.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://eum-website.vercel.app/images/e-umrogo_sum.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://eum-website.vercel.app/images/e-umrogo_sum.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eum-website.vercel.app/images/e-umrogo_sum.png">
+    <link rel="shortcut icon" href="https://eum-website.vercel.app/images/e-umrogo_sum.png">
+    
+    <!-- 사파리 전용 파비콘 설정 -->
+    <link rel="mask-icon" href="https://eum-website.vercel.app/images/e-umrogo_sum.png" color="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="msapplication-TileImage" content="https://eum-website.vercel.app/images/e-umrogo_sum.png">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- 리소스 힌트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    
+    <!-- 폰트 최적화 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS 로딩 -->
+    <link rel="stylesheet" href="style.css?v=1.8">
+    
+
+    
+    <!-- JavaScript 로딩 -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">E-UM</div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">home</a>
+                <a href="#about" class="nav-link">about</a>
+                <a href="#activities" class="nav-link">activities</a>
+                <a href="#exhibitions" class="nav-link">exhibition</a>
+                <a href="https://www.instagram.com/e.__.um?igsh=MWFiOHZxNnNnc214Zw%3D%3D&utm_source=qr" target="_blank" class="nav-link instagram-nav-link desktop-only">
+                    <img src="images/instarogo1.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle;">
+                </a>
+            </div>
+            <div class="mobile-nav-controls">
+                <a href="https://www.instagram.com/e.__.um?igsh=MWFiOHZxNnNnc214Zw%3D%3D&utm_source=qr" target="_blank" class="instagram-nav-link mobile-only">
+                    <img src="images/instarogo1.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle;">
+                </a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 파티클 텍스트 캔버스 -->
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+    <!-- 메인 페이지 -->
+    <section id="home" class="hero">
+        <!-- 워터마크 배경 -->
+        <div id="watermarkContainer" class="watermark-container"></div>
+        
+        <!-- 아스키 아트 E-UM 텍스트 -->
+        <div class="hero-main-title">
+            <pre id="asciiArt" class="ascii-art">
+███████╗      ██╗   ██╗███╗   ███╗
+██╔════╝      ██║   ██║████╗ ████║
+█████╗  █████╗██║   ██║██╔████╔██║
+██╔══╝  ╚════╝██║   ██║██║╚██╔╝██║
+███████╗      ╚██████╔╝██║ ╚═╝ ██║
+╚══════╝       ╚═════╝ ╚═╝     ╚═╝
+            </pre>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- 동아리 소개 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>about</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h3>E-UM</h3>
+                    <br>
+                    <p>미디어아트 동아리 이음은<br>
+                        서로 다른 배경과 감각을 지닌 사람들이 모여<br> 
+                        기술과 예술의 경계를 자유롭게 넘나들며,<br> 
+                        각자의 시선이 만나 하나의 이야기를 그려냅니다.<br> 
+                    </p>
+                    <p><br>
+                        이음은 3D 모델링, 텍스처링, 모션 그래픽 등<br>  
+                        다채로운 매체로 상상을 현실로 그려내고,<br>  
+                        정기 전시와 공동 프로젝트,<br>  
+                        외부 협업을 이어가며 더 넓은 세계로 나아갑니다.<br> 
+                    </p>
+                    <p><br>
+                        한 사람의 작은 아이디어가<br>  
+                        다른 이의 마음에 닿아 잔잔한 울림이 되고<br>  
+                        그 울림이 모여 하나의 예술로 피어나는 순간 —<br> 
+                        우리는 이어집니다.</p>
+                </div>
+            </div>
+
+            <div class="about-history fade-in">
+                <h3>history</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024년 1월</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image">
+                                <img src="images/timeline/eum-logo.jpg" alt="창립" class="timeline-img">
+                            </div>
+                            <div class="timeline-text">
+                                <h4>동아리 이음 창립</h4>
+                                <p>미디어아트 동아리 이음(한과농장) 창립</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024년 2월</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image">
+                                <a href="exhibition-detail.html?id=survival" class="timeline-image-link">
+                                    <img src="images/timeline/survival.png" alt="서바이벌" class="timeline-img">
+                                </a>
+                            </div>
+                            <div class="timeline-text">
+                                <h4>SURVIVAL</h4>
+                                <p>메타콘텐츠융합전공 성과 보고회</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024년 5월</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image">
+                                <a href="exhibition-detail.html?id=meta-festival" class="timeline-image-link">
+                                    <img src="images/timeline/metacontents-square.png" alt="메타콘텐츠" class="timeline-img">
+                                </a>
+                            </div>
+                            <div class="timeline-text">
+                                <h4>GYEONGBUK META CONTENTS FESTIVAl</h4>
+                                <p>메타콘텐츠 학과 대표 전시 기획 및 작품 제작</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024년 6월</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image">
+                                <a href="exhibition-detail.html?id=mimyo" class="timeline-image-link">
+                                    <img src="images/timeline/mimyo.jpg" alt="미묘하다" class="timeline-img">
+                                </a>
+                            </div>
+                            <div class="timeline-text">
+                                <h4>美, 묘하다</h4>
+                                <p>학기말 연말전시 [미묘하다] : 교내 전시 기획 및 작품 제작</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024년 10월</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image">
+                                <a href="exhibition-detail.html?id=future-fragments" class="timeline-image-link">
+                                    <img src="images/timeline/future-fragments.jpeg" alt="미래의 파편들" class="timeline-img">
+                                </a>
+                            </div>
+                            <div class="timeline-text">
+                                <h4>미래의 파편들</h4>
+                                <p>뉴테크가 만든 예술의 조각들 [미래의 파편들] : 교외 전시 작가로 참여 및 작품 제작</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024년 12월</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image">
+                                <a href="exhibition-detail.html?id=sobok" class="timeline-image-link">
+                                    <img src="images/timeline/sobok.jpg" alt="소복" class="timeline-img">
+                                </a>
+                            </div>
+                            <div class="timeline-text">
+                                <h4>소복</h4>
+                                <p>학기말 연말전시 [소복] : 전시 기획 및 작품 제작</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024년 12월</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image">
+                                <a href="exhibition-detail.html?id=clear-things" class="timeline-image-link">
+                                    <img src="images/timeline/clear-things.jpg" alt="선명해져야 할 것들" class="timeline-img">
+                                </a>
+                            </div>
+                            <div class="timeline-text">
+                                <h4>선명해져야 할 것들</h4>
+                                <p>교외전시 [선명해져야 할 것들] : 김다슬 교수님 전시 참여 및 작품 제작</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025년 5월</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image">
+                                <a href="exhibition-detail.html?id=zip" class="timeline-image-link">
+                                    <img src="images/timeline/zip-poster.jpeg" alt=".zip" class="timeline-img">
+                                </a>
+                            </div>
+                            <div class="timeline-text">
+                                <h4>.zip</h4>
+                                <p>학기말 전시 [.zip] : 전시 기획 및 작품 제작</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025년 7월</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image">
+                                <a href="exhibition-detail.html?id=sensory-dissolution" class="timeline-image-link">
+                                    <img src="images/timeline/sensory-dissolution.png" alt="감각해체" class="timeline-img">
+                                </a>
+                            </div>
+                            <div class="timeline-text">
+                                <h4>DISSOLUTION OF SENSES: 감각해체</h4>
+                                <p>픽셀펄스 전시 [감각해체] : 단체전시 기획 및 작품 제작</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 활동 소개 -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>activities</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card fade-in" data-activity="workshop">
+                    <div class="activity-image">
+                        <img src="images/regular-workshop.jpeg" alt="정기 워크샵" class="activity-img">
+                        <div class="activity-overlay">
+                            <span class="activity-type">사진</span>
+                        </div>
+                    </div>
+                    <div class="activity-content">
+                        <h3>정기 워크샵</h3>
+                        <p>매주 진행되는 정기 워크샵에서는 다양한 미디어아트 기법과 도구들을 학습합니다. 
+                        blender, TouchDesigner 등을 활용한 실습을 통해 실력을 키워나갑니다.</p>
+                        <span class="activity-date">매주 수요일</span>
+                    </div>
+                </div>
+                <div class="activity-card fade-in" data-activity="mt">
+                    <div class="activity-image">
+                        <video class="activity-video" muted loop autoplay playsinline>
+                            <source src="videos/동아리엠티 2.mp4" type="video/mp4">
+                        </video>
+                        <div class="activity-overlay">
+                            <span class="activity-type">영상</span>
+                        </div>
+                    </div>
+                    <div class="activity-content">
+                        <h3>동아리 MT</h3>
+                        <p>학기마다 진행되는 MT에서는 구성원들 간의 친목을 다지고, 
+                        전시 관람 및 다양한 활동을 통하여 영감을 얻어 새로운 작품 아이디어를 구상합니다.</p>
+                        <span class="activity-date">학기별 1회</span>
+                    </div>
+                </div>
+                <div class="activity-card fade-in" data-activity="projection">
+                    <div class="activity-image">
+                        <video class="activity-video" muted loop autoplay playsinline>
+                            <source src="videos/jungja-mapping.mp4" type="video/mp4">
+                        </video>
+                        <div class="activity-overlay">
+                            <span class="activity-type">영상</span>
+                        </div>
+                    </div>
+                    <div class="activity-content">
+                        <h3>프로젝션 매핑</h3>
+                        <p>물리적 오브제에 빛을 투영시켜 본래의 형태와 다른 이미지나 영상을 보여주는 Projection Mapping을 통해 미디어아트 작품을 제작합니다.</p>
+                        <span class="activity-date">분기별 1회</span>
+                    </div>
+                </div>
+                <div class="activity-card fade-in" data-activity="exhibition">
+                    <div class="activity-image">
+                        <video class="activity-video" muted loop autoplay playsinline>
+                            <source src="videos/전시 견학.mp4" type="video/mp4">
+                        </video>
+                        <div class="activity-overlay">
+                            <span class="activity-type">영상</span>
+                        </div>
+                    </div>
+                    <div class="activity-content">
+                        <h3>전시 견학</h3>
+                        <p>국내 및 외국 미디어아트 전시회와 갤러리를 견학하며 최신 트렌드를 파악하고, 
+                        다양한 작품들을 직접 체험해보는 시간을 갖습니다.</p>
+                        <span class="activity-date">학기별 1회</span>
+                    </div>
+                </div>
+                <div class="activity-card fade-in" data-activity="final-exhibition">
+                    <div class="activity-image">
+                        <img src="images/semester-end-exhibition2.jpeg" alt="학기말 전시" class="activity-img">
+                        <div class="activity-overlay">
+                            <span class="activity-type">사진</span>
+                        </div>
+                    </div>
+                    <div class="activity-content">
+                        <h3>학기말 전시</h3>
+                        <p>학기말 전시를 통해 학습한 내용을 토대로 작품을 제작하고, 
+                        다양한 작품을 선보이며 직접 전시하는 경험을 합니다.</p>
+                        <span class="activity-date">학기말</span>
+                    </div>
+                </div>
+                <div class="activity-card fade-in" data-activity="collaboration">
+                    <div class="activity-image">
+                        <img src="images/collaboration-project.jpeg" alt="협업 프로젝트" class="activity-img">
+                        <div class="activity-overlay">
+                            <span class="activity-type">사진</span>
+                        </div>
+                    </div>
+                    <div class="activity-content">
+                        <h3>협업 프로젝트</h3>
+                        <p>팀을 이루어 진행하는 협업 프로젝트를 통해 대규모 미디어아트 작품을 제작합니다. 
+                        기획부터 완성까지 전 과정을 함께 경험합니다.</p>
+                        <span class="activity-date">학기별 1회</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 전시 소개 -->
+    <section id="exhibitions" class="exhibitions">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>exhibition</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="exhibitions-content">
+                <div class="exhibitions-slider fade-in">
+                    <div class="slider-container">
+                        <div class="slider-track">
+                            <!-- 감각해체 -->
+                            <div class="exhibition-card current" data-exhibition="sensory-dissolution">
+                                <div class="exhibition-image">
+                                    <video autoplay muted loop playsinline class="exhibition-img">
+                                        <source src="videos/sensory-dissolution.mp4" type="video/mp4">
+                                        <img src="images/timeline/sensory-dissolution.png" alt="DISSOLUTION OF SENSES: 감각해체">
+                                    </video>
+                                </div>
+                                <div class="exhibition-info">
+                                    <h4>DISSOLUTION OF SENSES: 감각해체</h4>
+                                    <p class="exhibition-period">2025.07.01 - 2025.07.31</p>
+                                    <p class="exhibition-location">아트코리아랩 미디어월</p>
+                                    <p class="exhibition-description">단체전시 기획 및 작품 제작</p>
+                                    <div class="exhibition-view-btn">자세히 보기</div>
+                                </div>
+                            </div>
+                            
+                            <!-- .zip -->
+                            <div class="exhibition-card" data-exhibition="zip">
+                                <div class="exhibition-image">
+                                    <video autoplay muted loop playsinline class="exhibition-img">
+                                                                                  <source src="videos/zip_moving 3-1.mov" type="video/mp4">
+                                          <source src="videos/zip_moving 3-1.mov" type="video/quicktime">
+                                        <img src="images/timeline/zip-poster.jpeg" alt=".zip">
+                                    </video>
+                                </div>
+                                <div class="exhibition-info">
+                                    <h4>.zip</h4>
+                                    <p class="exhibition-period">2025.05.26 - 2025.05.29</p>
+                                    <p class="exhibition-location">경일대학교 12호관 1F</p>
+                                    <p class="exhibition-description">학기말 전시 기획 및 작품 제작</p>
+                                    <div class="exhibition-view-btn">자세히 보기</div>
+                                </div>
+                            </div>
+                            
+                            <!-- 선명해져야 할 것들 -->
+                            <div class="exhibition-card" data-exhibition="clear-things">
+                                <div class="exhibition-image">
+                                    <img src="images/timeline/clear-things.jpg" alt="선명해져야 할 것들" class="exhibition-img">
+                                </div>
+                                <div class="exhibition-info">
+                                    <h4>선명해져야 할 것들</h4>
+                                    <p class="exhibition-period">2024.12.20 - 2024.12.31</p>
+                                    <p class="exhibition-location">MOV.A(성미산로 888-11 5F)</p>
+                                    <p class="exhibition-description">김다슬 교수님 전시 참여 및 작품 제작</p>
+                                    <div class="exhibition-view-btn">자세히 보기</div>
+                                </div>
+                            </div>
+                            
+                            <!-- 소복 -->
+                            <div class="exhibition-card" data-exhibition="sobok">
+                                <div class="exhibition-image">
+                                    <img src="images/timeline/sobok.jpg" alt="소복" class="exhibition-img">
+                                </div>
+                                <div class="exhibition-info">
+                                    <h4>소복</h4>
+                                    <p class="exhibition-period">2024.12.16 - 2024.12.20</p>
+                                    <p class="exhibition-location">경일대학교 12호관 1F</p>
+                                    <p class="exhibition-description">학기말 전시 기획 및 작품 제작</p>
+                                    <div class="exhibition-view-btn">자세히 보기</div>
+                                </div>
+                            </div>
+                            
+                            <!-- 미래의 파편들 -->
+                            <div class="exhibition-card" data-exhibition="future-fragments">
+                                <div class="exhibition-image">
+                                    <img src="images/timeline/future-fragments.jpeg" alt="미래의 파편들" class="exhibition-img">
+                                </div>
+                                <div class="exhibition-info">
+                                    <h4>미래의 파편들</h4>
+                                    <p class="exhibition-period">2024.10.18 - 2024.11.10</p>
+                                    <p class="exhibition-location">대구경북디자인센터 1F Media Wall</p>
+                                    <p class="exhibition-description">교외 전시 작가로 참여 및 작품 제작</p>
+                                    <div class="exhibition-view-btn">자세히 보기</div>
+                                </div>
+                            </div>
+                            
+                            <!-- 美,묘하다 -->
+                            <div class="exhibition-card" data-exhibition="mimyo">
+                                <div class="exhibition-image">
+                                    <img src="images/timeline/mimyo.jpg" alt="美,묘하다" class="exhibition-img">
+                                </div>
+                                <div class="exhibition-info">
+                                    <h4>美, 묘하다</h4>
+                                    <p class="exhibition-period">2024.06.04 - 2024.06.10</p>
+                                    <p class="exhibition-location">경일대학교 11호관 갤러리</p>
+                                    <p class="exhibition-description">학기말 전시 기획 및 작품 제작</p>
+                                    <div class="exhibition-view-btn">자세히 보기</div>
+                                </div>
+                            </div>
+                            
+                            <!-- GYEONGBUK META CONTENTS FESTIVAL -->
+                            <div class="exhibition-card" data-exhibition="meta-festival">
+                                <div class="exhibition-image">
+                                    <img src="images/timeline/metacontents-square.png" alt="GYEONGBUK META CONTENTS FESTIVAL" class="exhibition-img">
+                                </div>
+                                <div class="exhibition-info">
+                                    <h4>GYEONGBUK META CONTENTS FESTIVAL</h4>
+                                    <p class="exhibition-period">2024.05.31 - 2024.06.02</p>
+                                    <p class="exhibition-location">대구 EXCO 동관 1F HALL 6</p>
+                                    <p class="exhibition-description">메타콘텐츠 학과 대표 전시 기획 및 작품 제작</p>
+                                    <div class="exhibition-view-btn">자세히 보기</div>
+                                </div>
+                            </div>
+                            
+                            <!-- SURVIVAL -->
+                            <div class="exhibition-card" data-exhibition="survival">
+                                <div class="exhibition-image">
+                                    <video autoplay muted loop playsinline class="exhibition-img">
+                                                                                  <source src="videos/survival.mp4" type="video/mp4">
+                                        <img src="images/timeline/survival.png" alt="SURVIVAL">
+                                    </video>
+                                </div>
+                                <div class="exhibition-info">
+                                    <h4>SURVIVAL</h4>
+                                    <p class="exhibition-period">2024.02.17 - 2024.02.25</p>
+                                    <p class="exhibition-location">대구 중구 동덕로 30길 117 2F 아트스텔라 소노</p>
+                                    <p class="exhibition-description">
+                                        메타콘텐츠융합전공의 성과 보고회
+                                    </p>
+                                    <div class="exhibition-view-btn">자세히 보기</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 슬라이더 네비게이션 -->
+                    <div class="slider-nav">
+                        <button class="slider-btn prev">
+                            <span>‹</span>
+                        </button>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button class="slider-btn next">
+                            <span>›</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 전시 상세 모달 -->
+    <div id="exhibitionModal" class="exhibition-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">전시 제목</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="exhibition-details">
+                    <p id="modalPeriod" class="exhibition-period-modal"></p>
+                    <p id="modalLocation" class="exhibition-location-modal"></p>
+                    <p id="modalDescription" class="exhibition-description-modal"></p>
+                </div>
+                
+                <div class="media-tabs">
+                    <button class="tab-btn active" data-tab="photos">사진</button>
+                    <button class="tab-btn" data-tab="videos">영상</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="photos-tab" class="tab-pane active">
+                        <div id="photoGallery" class="photo-gallery">
+                            <!-- 사진들이 여기에 동적으로 추가됩니다 -->
+                        </div>
+                    </div>
+                    <div id="videos-tab" class="tab-pane">
+                        <div class="video-container">
+                            <video id="exhibitionVideo" controls>
+                                <source src="" type="video/mp4">
+                                브라우저가 비디오를 지원하지 않습니다.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 동아리 신청 팝업 -->
+    <div id="applicationPopup" class="application-popup">
+        <div class="popup-overlay"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>동아리 신청</h3>
+                <button class="popup-close" id="popupClose">&times;</button>
+            </div>
+            <div class="popup-body">
+                <p>E-UM 동아리에 관심이 있으시다면<br> 
+                    아래 링크를 통해 신청해주세요!</p>
+                <a href="#" class="application-link" id="applicationLink" target="_blank">
+                    <span>구글폼으로 신청하기</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">E-UM</div>
+                <div class="footer-info">
+                    <p>미디어아트 동아리 E-UM<br>
+                    contect. eumartclub@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 E-UM Media Art Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

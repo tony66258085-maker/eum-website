@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전시 상세 - E-UM</title>
+    
+    <!-- Open Graph 메타 태그 (소셜 미디어 공유용) -->
+    <meta property="og:title" content="E-UM">
+    <meta property="og:description" content="E-UM 미디어아트 동아리의 전시 작품들을 확인해보세요.">
+    <meta property="og:image" content="https://eum-website.vercel.app/images/timeline/eum-logo.jpg?v=5">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eum-website.vercel.app/exhibition-detail.html">
+    <meta property="og:site_name" content="E-UM">
+    
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="E-UM">
+    <meta name="twitter:description" content="E-UM 미디어아트 동아리의 전시 작품들을 확인해보세요.">
+    <meta name="twitter:image" content="https://eum-website.vercel.app/images/timeline/eum-logo.jpg?v=5">
+    
+    <!-- 카카오톡 메타 태그 -->
+    <meta property="og:image:secure_url" content="https://eum-website.vercel.app/images/timeline/eum-logo.jpg?v=5">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="E-UM 미디어아트 동아리 로고">
+    
+    <!-- 보안 메타 태그 -->
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <!-- 브라우저 탭용 파비콘 설정 -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://eum-website.vercel.app/images/e-umrogo_sum.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://eum-website.vercel.app/images/e-umrogo_sum.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://eum-website.vercel.app/images/e-umrogo_sum.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eum-website.vercel.app/images/e-umrogo_sum.png">
+    <link rel="shortcut icon" href="https://eum-website.vercel.app/images/e-umrogo_sum.png">
+    
+    <!-- 사파리 전용 파비콘 설정 -->
+    <link rel="mask-icon" href="https://eum-website.vercel.app/images/e-umrogo_sum.png" color="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="msapplication-TileImage" content="https://eum-website.vercel.app/images/e-umrogo_sum.png">
+    <meta name="theme-color" content="#2563eb">
+    
+    <link rel="stylesheet" href="exhibition-detail.css?v=1.1">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <button class="back-btn" id="backBtn">← 뒤로가기</button>
+                <h1 class="exhibition-title" id="exhibitionTitle">전시 제목</h1>
+            </div>
+            <button class="close-btn" id="closeBtn">&times;</button>
+        </div>
+        <div class="exhibition-info">
+            <span class="exhibition-period" id="exhibitionPeriod">기간</span>
+            <span class="exhibition-location" id="exhibitionLocation">장소</span>
+        </div>
+        <div class="exhibition-description" id="exhibitionDescription">
+            <!-- 전시 상세 설명이 여기에 표시됩니다 -->
+        </div>
+    </header>
+
+    <!-- 메인 컨텐츠 -->
+    <main class="main-content">
+        <div class="media-container" id="mediaContainer">
+            <!-- 사진과 영상이 동적으로 추가됩니다 -->
+        </div>
+    </main>
+
+    <!-- 로딩 인디케이터 -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+        <p>로딩 중...</p>
+    </div>
+
+    <script src="exhibition-detail.js"></script>
+</body>
+</html>
