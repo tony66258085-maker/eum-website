@@ -503,24 +503,53 @@ function initTouchSwipe() {
 
 // 모바일 영상 자동 재생 설정
 function initMobileVideoAutoplay() {
-    const videos = document.querySelectorAll('.activity-video[autoplay]');
+    // 활동 영상과 전시 영상 모두 포함
+    const videos = document.querySelectorAll('.activity-video, .exhibition-img');
     videos.forEach(video => {
-        video.muted = true;
-        video.playsInline = true;
-        video.autoplay = true;
-        
-        // Intersection Observer로 화면에 보일 때만 재생
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    video.play().catch(e => console.log('영상 재생 실패:', e));
-                } else {
-                    video.pause();
+        // video 태그인지 확인
+        if (video.tagName.toLowerCase() === 'video') {
+            video.muted = true;
+            video.playsInline = true;
+            video.autoplay = true;
+            video.preload = 'metadata';
+            
+            // 영상 로드 에러 처리
+            video.addEventListener('error', (e) => {
+                console.log('영상 로드 에러:', video.src, e);
+                // fallback 이미지 표시
+                const fallbackImg = video.querySelector('img');
+                if (fallbackImg) {
+                    video.style.display = 'none';
+                    fallbackImg.style.display = 'block';
                 }
             });
-        }, { threshold: 0.5 });
-        
-        observer.observe(video);
+            
+            // 영상 로드 성공시 처리
+            video.addEventListener('loadeddata', () => {
+                console.log('영상 로드 성공:', video.src);
+            });
+            
+            // Intersection Observer로 화면에 보일 때만 재생
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        video.play().catch(e => {
+                            console.log('영상 재생 실패:', video.src, e);
+                            // fallback 이미지 표시
+                            const fallbackImg = video.querySelector('img');
+                            if (fallbackImg) {
+                                video.style.display = 'none';
+                                fallbackImg.style.display = 'block';
+                            }
+                        });
+                    } else {
+                        video.pause();
+                    }
+                });
+            }, { threshold: 0.3 });
+            
+            observer.observe(video);
+        }
     });
 }
 
@@ -806,7 +835,7 @@ const exhibitionData = {
             'exhibition-details/sensory-dissolution/sensory_dissolution18.jpeg'
         ],
         videos: [
-            'exhibition-details/sensory-dissolution/sensory_dissolution_video.mov'
+            'exhibition-details/sensory-dissolution/sensory_dissolution_video.mp4'
         ]
     },
     'zip': {
@@ -926,10 +955,10 @@ const exhibitionData = {
             'exhibition-details/metacontents-festival/metacontents-composition.png',
             'exhibition-details/metacontents-festival/metacontents-photo1_edited.jpg',
             'exhibition-details/metacontents-festival/metacontents-photo2_edited.jpg',
-            'exhibition-details/metacontents-festival/metacontents-photo3_edited.png',
+            'exhibition-details/metacontents-festival/metacontents-photo3_edited.jpg',
             'exhibition-details/metacontents-festival/metacontents-photo4_edited.jpg',
             'exhibition-details/metacontents-festival/metacontents-photo5_edited_edited.jpg',
-            'exhibition-details/metacontents-festival/metacontents-process_edited.png',
+            'exhibition-details/metacontents-festival/metacontents-process_edited.jpg',
             'exhibition-details/metacontents-festival/metacontents-process2_edited.jpg'
         ],
         videos: []
@@ -940,12 +969,12 @@ const exhibitionData = {
         location: '대구 중구 동덕로 30길 117 2F 아트스텔라 소노',
         description: '메타콘텐츠융합전공의 성과 보고회',
         photos: [
-            'exhibition-details/SURVIVAL/survival_photo1.png',
-            'exhibition-details/SURVIVAL/survival_photo2.png',
-            'exhibition-details/SURVIVAL/survival_photo3.png',
-            'exhibition-details/SURVIVAL/survival_photo4.png',
-            'exhibition-details/SURVIVAL/survival_photo5.png',
-            'exhibition-details/SURVIVAL/survival_photo6.png'
+            'exhibition-details/SURVIVAL/survival_photo1.jpg',
+            'exhibition-details/SURVIVAL/survival_photo2.jpg',
+            'exhibition-details/SURVIVAL/survival_photo3.jpg',
+            'exhibition-details/SURVIVAL/survival_photo4.jpg',
+            'exhibition-details/SURVIVAL/survival_photo5.jpg',
+            'exhibition-details/SURVIVAL/survival_photo6.jpg'
         ],
         videos: [
             'exhibition-details/SURVIVAL/survival_video2.mp4'
@@ -1743,9 +1772,29 @@ function initVideoFallback() {
     });
 }
 
+// 영상 상태 디버깅 함수
+function debugVideoStatus() {
+    console.log('=== 영상 상태 디버깅 ===');
+    const videos = document.querySelectorAll('video');
+    videos.forEach((video, index) => {
+        console.log(`영상 ${index + 1}:`);
+        console.log('- src:', video.currentSrc || video.src);
+        console.log('- readyState:', video.readyState);
+        console.log('- networkState:', video.networkState);
+        console.log('- error:', video.error);
+        console.log('- paused:', video.paused);
+        console.log('- muted:', video.muted);
+        console.log('- autoplay:', video.autoplay);
+        console.log('---');
+    });
+}
+
 // DOM 로드 완료 후 비디오 fallback 초기화
 document.addEventListener('DOMContentLoaded', function() {
     initVideoFallback();
+    
+    // 5초 후 영상 상태 디버깅
+    setTimeout(debugVideoStatus, 5000);
 });
 
 // 동아리 신청 팝업 초기화

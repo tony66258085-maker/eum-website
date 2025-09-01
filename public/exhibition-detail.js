@@ -412,7 +412,10 @@ function createModernGalleryItems(mediaArray) {
             video.src = media.src;
             video.muted = true;
             video.playsInline = true;
-            video.preload = 'metadata';
+            video.preload = 'metadata'; // 영상 메타데이터와 첫 프레임 로드
+            
+            // 1초 지점의 프레임을 썸네일로 사용
+            video.currentTime = 1;
             
             // 비디오 오버레이 추가
             const overlay = document.createElement('div');
@@ -421,6 +424,13 @@ function createModernGalleryItems(mediaArray) {
             
             video.onloadedmetadata = function() {
                 console.log('비디오 로드 성공:', media.src);
+                // 메타데이터 로드 후 1초 지점으로 이동
+                video.currentTime = 1;
+            };
+            
+            // 첫 번째 프레임을 빠르게 로드하기 위한 설정
+            video.onloadeddata = function() {
+                console.log('비디오 첫 프레임 로드 완료:', media.src);
             };
             
             video.onerror = function() {
@@ -717,6 +727,13 @@ function createMediaItems(mediaArray, container) {
             video.playsInline = true;
             video.preload = 'metadata';
             video.controls = false;
+            
+            // 포스터 이미지 설정 (썸네일용)
+            if (media.src.includes('sensory-dissolution')) {
+                video.poster = 'exhibition-details/sensory-dissolution/sensory_dissolution1.jpeg';
+            } else if (media.src.includes('SURVIVAL')) {
+                video.poster = 'exhibition-details/SURVIVAL/survival_photo1.jpg';
+            }
             video.style.cssText = `
                 max-width: 100%;
                 max-height: 100%;
@@ -750,6 +767,8 @@ function createMediaItems(mediaArray, container) {
             
             video.onloadedmetadata = function() {
                 console.log('비디오 로드 성공:', media.src);
+                // 메타데이터 로드 후 1초 지점으로 이동
+                video.currentTime = 1;
             };
             
             // 재생 버튼 오버레이
@@ -945,7 +964,10 @@ function addBottomThumbnailPreview(container, mediaArray) {
             video.src = media.src;
             video.muted = true;
             video.playsInline = true;
-            video.preload = 'metadata';
+            video.preload = 'metadata'; // 영상 메타데이터와 첫 프레임 로드
+            
+            // 1초 지점의 프레임을 썸네일로 사용
+            video.currentTime = 1;
             video.style.cssText = `
                 width: 100%;
                 height: 100%;
@@ -1042,7 +1064,7 @@ function createMediaItem(media, index) {
         video.muted = true;
         video.loop = true;
         video.playsInline = true;
-        video.preload = 'metadata';
+        video.preload = 'metadata'; // 영상 메타데이터와 첫 프레임 로드
         
         video.onerror = function() {
             console.log('비디오 로드 실패:', media.src);
@@ -1051,6 +1073,8 @@ function createMediaItem(media, index) {
         
         video.onloadedmetadata = function() {
             console.log('비디오 로드 성공:', media.src);
+            // 메타데이터 로드 후 1초 지점으로 이동
+            video.currentTime = 1;
         };
         
         item.appendChild(video);

@@ -1815,6 +1815,12 @@ function initApplicationPopup() {
         popup.classList.remove('active');
         document.body.style.overflow = '';
         
+        // 커스텀 커서 다시 보이기
+        const customCursor = document.querySelector('.custom-cursor');
+        if (customCursor) {
+            customCursor.style.display = 'block';
+        }
+        
         // 로컬 스토리지에 팝업을 본 기록 저장 (24시간 동안 다시 보지 않음)
         const timestamp = new Date().getTime();
         localStorage.setItem('applicationPopupSeen', timestamp.toString());
@@ -1826,6 +1832,13 @@ function initApplicationPopup() {
     function openPopup() {
         popup.classList.add('active');
         document.body.style.overflow = 'hidden';
+        
+        // 커스텀 커서 숨기기
+        const customCursor = document.querySelector('.custom-cursor');
+        if (customCursor) {
+            customCursor.style.display = 'none';
+        }
+        
         console.log('팝업이 열렸습니다.');
     }
     
