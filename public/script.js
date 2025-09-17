@@ -417,8 +417,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // 모달 닫기 기능 초기화
     initModalClose();
     
-    // 동아리 신청 팝업 초기화
-    initApplicationPopup();
 
     console.log('E-UM 미디어아트 동아리 홈페이지가 로드되었습니다.');
 });
@@ -1797,81 +1795,5 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(debugVideoStatus, 5000);
 });
 
-// 동아리 신청 팝업 초기화
-function initApplicationPopup() {
-    console.log('동아리 신청 팝업 초기화 시작');
-    
-    const popup = document.getElementById('applicationPopup');
-    const closeBtn = document.getElementById('popupClose');
-    const overlay = popup.querySelector('.popup-overlay');
-    
-    if (!popup || !closeBtn || !overlay) {
-        console.log('팝업 요소를 찾을 수 없습니다.');
-        return;
-    }
-    
-    // 팝업 닫기 함수
-    function closePopup() {
-        popup.classList.remove('active');
-        document.body.style.overflow = '';
-        
-        // 커스텀 커서 다시 보이기
-        const customCursor = document.querySelector('.custom-cursor');
-        if (customCursor) {
-            customCursor.style.display = 'block';
-        }
-        
-        // 로컬 스토리지에 팝업을 본 기록 저장 (24시간 동안 다시 보지 않음)
-        const timestamp = new Date().getTime();
-        localStorage.setItem('applicationPopupSeen', timestamp.toString());
-        
-        console.log('팝업이 닫혔습니다.');
-    }
-    
-    // 팝업 열기 함수
-    function openPopup() {
-        popup.classList.add('active');
-        document.body.style.overflow = 'hidden';
-        
-        // 커스텀 커서 숨기기
-        const customCursor = document.querySelector('.custom-cursor');
-        if (customCursor) {
-            customCursor.style.display = 'none';
-        }
-        
-        console.log('팝업이 열렸습니다.');
-    }
-    
-    // 닫기 버튼 이벤트
-    closeBtn.addEventListener('click', closePopup);
-    
-    // 오버레이 클릭 시 닫기
-    overlay.addEventListener('click', closePopup);
-    
-    // ESC 키로 닫기
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && popup.classList.contains('active')) {
-            closePopup();
-        }
-    });
-    
-    // 동아리 신청 버튼 클릭 시 팝업 닫기
-    const applicationButton = popup.querySelector('.application-button');
-    if (applicationButton) {
-        applicationButton.addEventListener('click', function() {
-            // 구글폼으로 이동하기 전에 팝업 닫기
-            setTimeout(closePopup, 500);
-        });
-    }
-    
-    // 매번 팝업 표시 (시간 제한 없음)
-    setTimeout(() => {
-        openPopup();
-    }, 2000); // 2초로 단축
-    
-    console.log('2초 후 팝업이 표시됩니다.');
-    
-    console.log('동아리 신청 팝업 초기화 완료');
-}
 
 
