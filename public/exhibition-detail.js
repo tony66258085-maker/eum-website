@@ -161,6 +161,32 @@ const exhibitionData = {
         ],
         videos: []
     },
+    'breath': {
+        title: '숨',
+        period: '2025.09.23 - 2025.09.24',
+        location: '아진홀',
+        description: '단체전시 기획 및 작품 제작',
+        fullDescription: '단체전시 기획 및 작품 제작',
+        photos: [
+            'exhibition-details/breath/DSC07674_1.jpg',
+            'exhibition-details/breath/DSC07678_1.jpg',
+            'exhibition-details/breath/DSC07680_1.jpg',
+            'exhibition-details/breath/DSC07687.jpg',
+            'exhibition-details/breath/DSC07697.jpg',
+            'exhibition-details/breath/DSC07705.jpg',
+            'exhibition-details/breath/DSC07707.jpg',
+            'exhibition-details/breath/DSC07709.jpg',
+            'exhibition-details/breath/DSC07712.jpg',
+            'exhibition-details/breath/DSC07718.jpg',
+            'exhibition-details/breath/DSC07720.jpg',
+            'exhibition-details/breath/DSC07722.jpg',
+            'exhibition-details/breath/DSC07729.jpg',
+            'exhibition-details/breath/DSC07743.jpg'
+        ],
+        videos: [
+            'exhibition-details/breath/전시장 영상_1.mp4'
+        ]
+    },
     'survival': {
         title: 'SURVIVAL',
         period: '2024.02.17 - 2024.02.25',
