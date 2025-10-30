@@ -184,7 +184,7 @@ const exhibitionData = {
             'exhibition-details/breath/DSC07743.jpg'
         ],
         videos: [
-            'exhibition-details/breath/breath_exhibition_video.mp4'
+            'exhibition-details/breath/breath_exhibition_video_compressed.mp4'
         ]
     },
     'survival': {
