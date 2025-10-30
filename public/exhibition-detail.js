@@ -184,7 +184,7 @@ const exhibitionData = {
             'exhibition-details/breath/DSC07743.jpg'
         ],
         videos: [
-            'exhibition-details/breath/전시장 영상_1.mp4'
+            'exhibition-details/breath/breath_exhibition_video.mp4'
         ]
     },
     'survival': {
